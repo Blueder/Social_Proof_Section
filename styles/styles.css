@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+  font-family: 'Spartan';
+  src: url('../assets/Spartan-VariableFont_wght.ttf') format("truetype-variations");
+  font-weight: 1 999;
+}
+
+html body {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    font-family: Spartan;
+    background-image: url("../assets/bg-pattern-top-desktop.svg");
+    background-size: 100%;
+}
+
+#top-section {
+    text-align: center;
+    
+    width: 100%;
+    margin-top: 11%;
+}
+
+
+@media (min-width:720px) { 
+    #left-text {
+        width: 30%;
+        min-width: 432px;
+        text-align: left;
+        display: inline-block;
+        margin-right: 10%;
+    }
+    #second-rating {
+        position: relative;
+        left: 50px;
+    }
+    
+    #third-rating {
+        position: relative;
+        left: 100px;
+    }
+
+ } /*desktops/laptops*/
+
+@media (max-width: 1440px) { 
+    #left-text {
+        display: block;
+        margin: auto;
+        max-width: 70%;
+        min-width: 375px;
+        
+    }
+    #right-rating #bottom-section {
+        display: block;
+    }
+
+ }
+
+#left-text {
+    height: auto;
+}
+
+#left-text h1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #522150;
+}
+
+#left-text p {
+    padding-top: 16px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    font-weight: 400;
+    color: #888189;
+}
+
+#right-rating {
+    display: inline-block;
+    justify-content: center;
+}
+
+#right-rating p {
+    width: 445px;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px 32px;
+    background-color: #f8f2f6;
+    border-radius: 15px;
+    margin: 16px auto;
+}
+
+#right-rating p .rating-text {
+    padding-left: 33px;
+    color: #511f50;
+    font-weight: bold;
+}
+
+
+
+.icon {
+    background-image: url(../assets/icon-star.svg);
+    display: inline-block;
+    width:16px;
+    height:16px;
+}
+
+#bottom-section {
+    margin-top: 50px;
+    color: white;
+    width: 100%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.Reviews {
+    padding: 40px 30px;
+    margin: 0 30px;
+    width: 25%;
+    min-width: 350px;
+    height: 235px;
+    border-radius: 15px;
+    background-color: #511f50;
+}
+
+.top-review {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-review img {
+    border-radius: 50%;
+    float: left;
+}
+
+.top-review > .right-review {
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+}
+
+.verified-buyer {
+    color: #c373a8;
+}
+
+.comment {
+    padding-top: 10%;
+}
+
+.Review2 {
+    margin-top: 16px;
+}
+.Review3 {
+    margin-top: 32px;
+}
